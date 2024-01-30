@@ -1,1 +1,97 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelated Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="resources">
+            <h2>Resources</h2>
+            <div id="water">Water: 0</div>
+            <div id="blunts">Blunts: 0</div>
+            <div id="bombs">Bombs: 0</div>
+            <div id="bottles">Bottles: 0</div>
+            <div id="blocks">Blocks: 0</div>
+            <div id="books">Books: 0</div>
+            <div id="barrels">Barrels: 0</div>
+            <!-- Add more resource elements as needed -->
+        </div>
+        <br><br>
+        <div id="actions">
+            <h2>Actions</h2>
+
+            <!-- Button 1 (Water) -->
+            <button class="action-button" id="waterButton" onclick="buttonClick('waterButton', 1)">
+                <!-- Include the image for water -->
+            </button>
+
+            <!-- Button 2 (Work) -->
+            <button class="action-button" id="workButton" onclick="buttonClick('workButton', 2)">
+                <!-- Include the image for work -->
+            </button>
+
+            <!-- Button 3 (Shop) -->
+            <button class="action-button" id="shopButton" onclick="buttonClick('shopButton', 3)">
+                <!-- Include the image for shop -->
+            </button>
+
+            <!-- Button 4 (Buy) -->
+            <button class="action-button" id="buyButton" onclick="buttonClick('buyButton', 4)">
+                <!-- Include the image for buy -->
+            </button>
+
+            <!-- Button 5 (Sell) -->
+            <button class="action-button" id="sellButton" onclick="buttonClick('sellButton', 5)">
+                <!-- Include the image for sell -->
+            </button>
+
+            <!-- Button 6 (Bomb) -->
+            <button class="action-button" id="bombButton" onclick="buttonClick('bombButton', 6)">
+                <!-- Include the image for bomb -->
+            </button>
+
+            <!-- Button 7 (Collect) -->
+            <button class="action-button" id="collectButton" onclick="buttonClick('collectButton', 7)">
+                <!-- Include the image for collect -->
+            </button>
+
+            <!-- Button 8 (Madness) -->
+            <button class="action-button" id="madnessButton" onclick="buttonClick('madnessButton', 8)">
+                <!-- Include the image for madness -->
+            </button>
+
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+
+    <script>
+        const waterCounter = document.getElementById("water");
+        let waterCount = 0;
+        const bluntsCounter = document.getElementById("blunts");
+        let bluntsCount = 0;
+        const bombsCounter = document.getElementById("bombs");
+        let bombsCount = 0;
+        const bottlesCounter = document.getElementById("bottles");
+        let bottlesCount = 0;
+        const blocksCounter = document.getElementById("blocks");
+        let blocksCount = 0;
+        const booksCounter = document.getElementById("books");
+        let booksCount = 0;
+        const barrelsCounter = document.getElementById("barrels");
+        let barrelsCount = 0;
+
+        // Function to handle button click
+        function buttonClick(buttonId, resourceIncrement) {
+            switch (buttonId) {
+                case 'waterButton':
+                    waterCount += resourceIncrement;
+                    waterCounter.textContent = `Water: ${waterCount} clicks`;
+                    break;
+                case 'bluntsButton':
+                    bluntsCount += resourceIncrement;
+                    bluntsCounter.textContent = `Blunts: ${bluntsCount} clicks`;
+                    break;
+                case 'b
