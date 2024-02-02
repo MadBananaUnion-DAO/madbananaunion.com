@@ -5,13 +5,13 @@ body {
     padding: 0;
 }
 
-#game-container {
+game-container {
     display: flex;
     justify-content: space-around;
     padding: 20px;
 }
 
-#resources, #actions {
+resources, #actions {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -29,6 +29,6 @@ button {
     height: 100px; /* Adjust the size as needed */
 }
 
-#clickHistory {
+clickHistory {
     margin-top: 20px;
 }
