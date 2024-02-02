@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-game-container {
+#game-container {
     display: flex;
     justify-content: space-around;
     padding: 20px;
