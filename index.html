@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelated Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="resources">
+            <h2>Resources</h2>
+            <div id="clickHistory">Click History: 0 clicks</div>
+        </div>
+        <div id="actions">
+            <h2>Actions</h2>
+            <!-- Button 1 -->
+            <button class="action-button" onclick="buttonClick('waterButton', 1)">
+                <img src="images/water.png" alt="Water">
+            </button>
+            <!-- Button 2 -->
+            <button class="action-button" onclick="buttonClick('bluntsButton', 2)">
+                <img src="images/blunts.png" alt="Blunts">
+            </button>
+            <!-- Button 3 -->
+            <button class="action-button" onclick="buttonClick('bombsButton', 3)">
+                <img src="images/bombs.png" alt="Bombs">
+            </button>
+            <!-- Button 4 -->
+            <button class="action-button" onclick="buttonClick('bottlesButton', 4)">
+                <img src="images/bottles.png" alt="Bottles">
+            </button>
+            <!-- Button 5 -->
+            <button class="action-button" onclick="buttonClick('blocksButton', 5)">
+                <img src="images/blocks.png" alt="Blocks">
+            </button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
