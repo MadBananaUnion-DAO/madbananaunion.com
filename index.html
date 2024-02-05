@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MadMoneyMachine</title>
+    <title>MadBananaUnion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-image: url('background.png');">
     <div id="game-container">
         <div id="resources">
             <h2>Functions Sent to the MadBananaMachinery</h2>
-            <div id="clickHistory">Click History: 0 clicks</div>
+            <div id="clickHistory">Functions Called by you: 0 clicks</div>
         </div>
         <div id="actions">
             <h2>Actions</h2>
             <!-- Button 1 -->
-            <button class="action-button" onclick="buttonClick('waterButton', 1)">
+            <button class="action-button water" onclick="buttonClick('waterButton', 1)">
                 <img src="images/water.png" alt="Water">
+                <span>Water</span>
             </button>
             <!-- Button 2 -->
-            <button class="action-button" onclick="buttonClick('bluntsButton', 2)">
+            <button class="action-button blunts" onclick="buttonClick('bluntsButton', 2)">
                 <img src="images/blunts.png" alt="Blunts">
+                <span>Blunts</span>
             </button>
             <!-- Button 3 -->
-            <button class="action-button" onclick="buttonClick('bombsButton', 3)">
+            <button class="action-button bombs" onclick="buttonClick('bombsButton', 3)">
                 <img src="images/bombs.png" alt="Bombs">
+                <span>Bombs</span>
             </button>
             <!-- Button 4 -->
-            <button class="action-button" onclick="buttonClick('bottlesButton', 4)">
+            <button class="action-button bottles" onclick="buttonClick('bottlesButton', 4)">
                 <img src="images/bottles.png" alt="Bottles">
+                <span>Bottles</span>
             </button>
             <!-- Button 5 -->
-            <button class="action-button" onclick="buttonClick('blocksButton', 5)">
+            <button class="action-button blocks" onclick="buttonClick('blocksButton', 5)">
                 <img src="images/blocks.png" alt="Blocks">
+                <span>Blocks</span>
             </button>
             <!-- Add more buttons as needed -->
         </div>
