@@ -11,7 +11,9 @@ body {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column; /* Updated to column direction */
+    align-items: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -26,8 +28,5 @@ body {
 }
 
 .action-button span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: auto; /* Updated to move text to the top */
 }
