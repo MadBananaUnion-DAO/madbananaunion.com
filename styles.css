@@ -5,17 +5,17 @@ body {
 }
 
 .action-button {
-    background-color: #4CAF50; /* Change the background color as needed */
+    background-color: #ADD8E6; /* Change the background color as needed */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 15px 30px 30px;
     text-align: center;
     text-decoration: none;
     display: flex;
     flex-direction: column; /* Updated to column direction */
     align-items: center;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 20px;
+    margin: 4px 4px 2px 2px;
     cursor: pointer;
     position: relative;
 }
