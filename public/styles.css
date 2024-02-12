@@ -1,3 +1,13 @@
+body {
+    font-family: 'Survivant', survivant.ttf;
+    margin: 0;
+    padding: 0;
+}
+#root {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .btn-bd-primary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-white);
