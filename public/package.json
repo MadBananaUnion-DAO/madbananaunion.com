@@ -1,5 +1,17 @@
-"scripts": {
-  "dev": "next",
-  "build": "next build",
-  "start": "next start"
-},
+{
+  "name": "your_project",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
