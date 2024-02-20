@@ -2,32 +2,57 @@ body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('/barrel-screen.png');  
+            background-image: url('background.jpg'); /* URL of your background image */
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* Text color for contrast */
         }
-.header {
-            background-color: #333;
-            color: #fff;
+        .header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
             padding: 20px;
             text-align: center;
         }
-.container {
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-.gallery {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
-.image {
+        .image {
             border-radius: 8px;
             overflow: hidden;
+            cursor: pointer; /* Change cursor to pointer when hovering over images */
         }
-.image img {
+        .image img {
             width: 100%;
             height: auto;
+        }
+        /* Style for the link overlay */
+        .link-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease-in-out;
+        }
+        /* Style for the link text */
+        .link-overlay a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Show link overlay on image hover */
+        .image:hover .link-overlay {
+            opacity: 1;
         }
