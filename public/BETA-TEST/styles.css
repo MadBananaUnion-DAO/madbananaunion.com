@@ -30,8 +30,6 @@ body {
             overflow: hidden;
             cursor: pointer; 
             margin: 10px;
-        }
-        .image img {
             width: 20%;
             height: auto;
         }
