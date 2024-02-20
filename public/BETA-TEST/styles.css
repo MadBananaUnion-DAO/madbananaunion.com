@@ -19,14 +19,17 @@ body {
             padding: 20px;
         }
         .gallery {
-            display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         .image {
             border-radius: 8px;
             overflow: hidden;
-            cursor: pointer; /* Change cursor to pointer when hovering over images */
+            cursor: pointer; 
+            margin: 10px;
         }
         .image img {
             width: 100%;
