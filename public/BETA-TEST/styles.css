@@ -59,3 +59,34 @@ body {
         .image:hover .link-overlay {
             opacity: 1;
         }
+       .image {
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: translateY(-5px);
+        }
+
+        .image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .image a:hover {
+            background-color: #f0f0f0;
+        }
