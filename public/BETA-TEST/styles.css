@@ -2,14 +2,14 @@ body {
             font-family: Survivant, survivant;
             margin: 0;
             padding: 0;
-            background-image: barrel-screen; /* URL of your background image */
+            background-image: barrel-screen; 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: #fff; /* Text color for contrast */
+            color: #fff; 
         }
         .header {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             text-align: center;
         }
@@ -33,7 +33,6 @@ body {
             width: 20%;
             height: auto;
         }
-        /* Style for the link overlay */
         .link-overlay {
             position: absolute;
             top: 0;
@@ -44,16 +43,14 @@ body {
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-            opacity: 0; /* Initially hidden */
+            opacity: 0; 
             transition: opacity 0.3s ease-in-out;
         }
-        /* Style for the link text */
         .link-overlay a {
             color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
-        /* Show link overlay on image hover */
         .image:hover .link-overlay {
             opacity: 1;
         }
@@ -66,14 +63,12 @@ body {
         .image:hover {
             transform: translateY(-5px);
         }
-
         .image img {
             display: block;
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
-
         .image a {
             display: block;
             text-align: center;
@@ -84,7 +79,6 @@ body {
             border-radius: 0 0 8px 8px;
             transition: background-color 0.3s ease;
         }
-
         .image a:hover {
             background-color: #f0f0f0;
         }
