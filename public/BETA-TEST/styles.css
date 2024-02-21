@@ -2,7 +2,7 @@ body {
             font-family: Survivant, survivant;
             margin: 0;
             padding: 0;
-            background-image: url('/barrel-1.png'); /* URL of your background image */
+            background-image: barrel-screen; /* URL of your background image */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
