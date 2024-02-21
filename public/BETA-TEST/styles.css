@@ -1,5 +1,5 @@
 body {
-            font-family: Arial, survivant;
+            font-family: survivant;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -25,7 +25,7 @@ body {
             margin: 10px 0;
             font-weight: bold;
             text-transform: uppercase;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: survivant;
         }
 
         .gallery {
